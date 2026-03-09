@@ -8,6 +8,9 @@ version = "0.1.0"
 description = "Programmatic git hunk manipulation for AI-driven commit splitting"
 requires-python = ">=3.10"
 
+[tool.setuptools.packages.find]
+include = ["git_hunk_tool*"]
+
 [project.scripts]
 git-hunk-tool = "git_hunk_tool.cli:main"
 
